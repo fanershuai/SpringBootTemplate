@@ -1,0 +1,381 @@
+2018-11-01 11:21:46.554  INFO 9324 --- [main] com.fan.bootdemo.BootdemoApplication     : Starting BootdemoApplication on XSW-Tech-NB13 with PID 9324 (D:\JAVA_PROJECT\bootdemo\target\classes started by Ershuai.Fan in D:\JAVA_PROJECT\bootdemo)
+2018-11-01 11:21:46.559 DEBUG 9324 --- [main] com.fan.bootdemo.BootdemoApplication     : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-11-01 11:21:46.566  INFO 9324 --- [main] com.fan.bootdemo.BootdemoApplication     : No active profile set, falling back to default profiles: default
+2018-11-01 11:21:46.641  INFO 9324 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@692f203f: startup date [Thu Nov 01 11:21:46 CST 2018]; root of context hierarchy
+2018-11-01 11:21:48.266  INFO 9324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2018-11-01 11:21:48.288  INFO 9324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-01 11:21:48.289  INFO 9324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-11-01 11:21:48.294  INFO 9324 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\MySQL\MySQL Server 5.5\bin;C:\Users\ershuai.fan\AppData\Local\Microsoft\WindowsApps;;.]
+2018-11-01 11:21:48.514  INFO 9324 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-11-01 11:21:48.518  INFO 9324 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2018-11-01 11:21:48.518  INFO 9324 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1877 ms
+2018-11-01 11:21:48.602  INFO 9324 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-01 11:21:48.604  INFO 9324 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-11-01 11:21:48.607  INFO 9324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-01 11:21:48.607  INFO 9324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-01 11:21:48.607  INFO 9324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-01 11:21:48.608  INFO 9324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-01 11:21:48.608  INFO 9324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-01 11:21:48.859  INFO 9324 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-11-01 11:21:49.146  INFO 9324 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:21:49.313  INFO 9324 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@692f203f: startup date [Thu Nov 01 11:21:46 CST 2018]; root of context hierarchy
+2018-11-01 11:21:49.362  INFO 9324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/greet]}" onto public org.springframework.web.servlet.ModelAndView com.fan.bootdemo.modules.demo.controller.DemoController.test(org.springframework.web.servlet.ModelAndView)
+2018-11-01 11:21:49.363  INFO 9324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/getdemo]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.getDemo()
+2018-11-01 11:21:49.364  INFO 9324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/hello]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.hello()
+2018-11-01 11:21:49.366  INFO 9324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-01 11:21:49.366  INFO 9324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-01 11:21:49.390  INFO 9324 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:21:49.390  INFO 9324 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:21:49.495  INFO 9324 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-01 11:21:49.724  INFO 9324 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-01 11:21:49.725  INFO 9324 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-11-01 11:21:49.726  INFO 9324 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-11-01 11:21:49.732  INFO 9324 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-11-01 11:21:49.733  INFO 9324 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-11-01 11:21:49.771  INFO 9324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path '/boot'
+2018-11-01 11:21:49.774  INFO 9324 --- [main] com.fan.bootdemo.BootdemoApplication     : Started BootdemoApplication in 3.885 seconds (JVM running for 4.831)
+2018-11-01 11:22:18.954  INFO 9508 --- [main] com.fan.bootdemo.BootdemoApplication     : Starting BootdemoApplication on XSW-Tech-NB13 with PID 9508 (D:\JAVA_PROJECT\bootdemo\target\classes started by Ershuai.Fan in D:\JAVA_PROJECT\bootdemo)
+2018-11-01 11:22:18.959 DEBUG 9508 --- [main] com.fan.bootdemo.BootdemoApplication     : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-11-01 11:22:18.962  INFO 9508 --- [main] com.fan.bootdemo.BootdemoApplication     : No active profile set, falling back to default profiles: default
+2018-11-01 11:22:19.062  INFO 9508 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48f2bd5b: startup date [Thu Nov 01 11:22:19 CST 2018]; root of context hierarchy
+2018-11-01 11:22:20.599  INFO 9508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2018-11-01 11:22:20.624  INFO 9508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-01 11:22:20.625  INFO 9508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-11-01 11:22:20.629  INFO 9508 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\MySQL\MySQL Server 5.5\bin;C:\Users\ershuai.fan\AppData\Local\Microsoft\WindowsApps;;.]
+2018-11-01 11:22:20.866  INFO 9508 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-11-01 11:22:20.871  INFO 9508 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2018-11-01 11:22:20.871  INFO 9508 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1809 ms
+2018-11-01 11:22:20.955  INFO 9508 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-01 11:22:20.956  INFO 9508 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-11-01 11:22:20.960  INFO 9508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-01 11:22:20.960  INFO 9508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-01 11:22:20.960  INFO 9508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-01 11:22:20.960  INFO 9508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-01 11:22:20.960  INFO 9508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-01 11:22:21.171  INFO 9508 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-11-01 11:22:21.498  INFO 9508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:22:21.682  INFO 9508 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48f2bd5b: startup date [Thu Nov 01 11:22:19 CST 2018]; root of context hierarchy
+2018-11-01 11:22:21.732  INFO 9508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/greet]}" onto public org.springframework.web.servlet.ModelAndView com.fan.bootdemo.modules.demo.controller.DemoController.test(org.springframework.web.servlet.ModelAndView)
+2018-11-01 11:22:21.733  INFO 9508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/hello]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.hello()
+2018-11-01 11:22:21.734  INFO 9508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/getdemo]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.getDemo()
+2018-11-01 11:22:21.736  INFO 9508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-01 11:22:21.737  INFO 9508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-01 11:22:21.761  INFO 9508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:22:21.761  INFO 9508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:22:21.857  INFO 9508 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-01 11:22:22.098  INFO 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-01 11:22:22.099  INFO 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-11-01 11:22:22.100  INFO 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-11-01 11:22:22.105  INFO 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-11-01 11:22:22.106  INFO 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-11-01 11:22:22.145  INFO 9508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path '/boot'
+2018-11-01 11:22:22.149  INFO 9508 --- [main] com.fan.bootdemo.BootdemoApplication     : Started BootdemoApplication in 3.943 seconds (JVM running for 4.915)
+2018-11-01 11:22:38.640  INFO 9508 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-01 11:22:38.640  INFO 9508 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-01 11:22:38.656  INFO 9508 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-11-01 11:22:38.678 DEBUG 9508 --- [http-nio-8090-exec-1] c.f.b.m.demo.controller.DemoController   : debug:
+2018-11-01 11:22:38.678  INFO 9508 --- [http-nio-8090-exec-1] c.f.b.m.demo.controller.DemoController   : info:
+2018-11-01 11:23:19.060 DEBUG 9508 --- [http-nio-8090-exec-3] c.f.b.m.demo.controller.DemoController   : debug:
+2018-11-01 11:23:19.061  INFO 9508 --- [http-nio-8090-exec-3] c.f.b.m.demo.controller.DemoController   : info:
+2018-11-01 11:24:59.871  INFO 5752 --- [main] com.fan.bootdemo.BootdemoApplication     : Starting BootdemoApplication on XSW-Tech-NB13 with PID 5752 (D:\JAVA_PROJECT\bootdemo\target\classes started by Ershuai.Fan in D:\JAVA_PROJECT\bootdemo)
+2018-11-01 11:24:59.875 DEBUG 5752 --- [main] com.fan.bootdemo.BootdemoApplication     : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-11-01 11:24:59.877  INFO 5752 --- [main] com.fan.bootdemo.BootdemoApplication     : No active profile set, falling back to default profiles: default
+2018-11-01 11:24:59.989  INFO 5752 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b2bbc3: startup date [Thu Nov 01 11:24:59 CST 2018]; root of context hierarchy
+2018-11-01 11:25:01.555  INFO 5752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2018-11-01 11:25:01.577  INFO 5752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-01 11:25:01.578  INFO 5752 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-11-01 11:25:01.582  INFO 5752 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\MySQL\MySQL Server 5.5\bin;C:\Users\ershuai.fan\AppData\Local\Microsoft\WindowsApps;;.]
+2018-11-01 11:25:01.792  INFO 5752 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-11-01 11:25:01.797  INFO 5752 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2018-11-01 11:25:01.797  INFO 5752 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1808 ms
+2018-11-01 11:25:01.881  INFO 5752 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-01 11:25:01.882  INFO 5752 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-11-01 11:25:01.885  INFO 5752 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-01 11:25:01.885  INFO 5752 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-01 11:25:01.886  INFO 5752 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-01 11:25:01.886  INFO 5752 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-01 11:25:01.886  INFO 5752 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-01 11:25:02.105  INFO 5752 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-11-01 11:25:02.411  INFO 5752 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:25:02.582  INFO 5752 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b2bbc3: startup date [Thu Nov 01 11:24:59 CST 2018]; root of context hierarchy
+2018-11-01 11:25:02.644  INFO 5752 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/greet]}" onto public org.springframework.web.servlet.ModelAndView com.fan.bootdemo.modules.demo.controller.DemoController.test(org.springframework.web.servlet.ModelAndView)
+2018-11-01 11:25:02.645  INFO 5752 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/getdemo]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.getDemo()
+2018-11-01 11:25:02.645  INFO 5752 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/hello]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.hello()
+2018-11-01 11:25:02.649  INFO 5752 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-01 11:25:02.650  INFO 5752 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-01 11:25:02.682  INFO 5752 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:25:02.682  INFO 5752 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:25:02.782  INFO 5752 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-01 11:25:03.013  INFO 5752 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-01 11:25:03.013  INFO 5752 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-11-01 11:25:03.014  INFO 5752 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-11-01 11:25:03.020  INFO 5752 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-11-01 11:25:03.021  INFO 5752 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-11-01 11:25:03.058  INFO 5752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path '/boot'
+2018-11-01 11:25:03.061  INFO 5752 --- [main] com.fan.bootdemo.BootdemoApplication     : Started BootdemoApplication in 3.808 seconds (JVM running for 4.737)
+2018-11-01 11:26:49.833  INFO 1380 --- [main] com.fan.bootdemo.BootdemoApplication     : Starting BootdemoApplication on XSW-Tech-NB13 with PID 1380 (D:\JAVA_PROJECT\bootdemo\target\classes started by Ershuai.Fan in D:\JAVA_PROJECT\bootdemo)
+2018-11-01 11:26:49.839 DEBUG 1380 --- [main] com.fan.bootdemo.BootdemoApplication     : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-11-01 11:26:49.843  INFO 1380 --- [main] com.fan.bootdemo.BootdemoApplication     : No active profile set, falling back to default profiles: default
+2018-11-01 11:26:49.999  INFO 1380 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@692f203f: startup date [Thu Nov 01 11:26:49 CST 2018]; root of context hierarchy
+2018-11-01 11:26:51.810  INFO 1380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2018-11-01 11:26:51.833  INFO 1380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-01 11:26:51.833  INFO 1380 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-11-01 11:26:51.838  INFO 1380 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\MySQL\MySQL Server 5.5\bin;C:\Users\ershuai.fan\AppData\Local\Microsoft\WindowsApps;;.]
+2018-11-01 11:26:52.087  INFO 1380 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-11-01 11:26:52.110  INFO 1380 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2018-11-01 11:26:52.110  INFO 1380 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2111 ms
+2018-11-01 11:26:52.204  INFO 1380 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-01 11:26:52.205  INFO 1380 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-11-01 11:26:52.209  INFO 1380 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-01 11:26:52.210  INFO 1380 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-01 11:26:52.210  INFO 1380 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-01 11:26:52.210  INFO 1380 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-01 11:26:52.211  INFO 1380 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-01 11:26:52.685  INFO 1380 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-11-01 11:26:53.590  INFO 1380 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:26:54.181  INFO 1380 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@692f203f: startup date [Thu Nov 01 11:26:49 CST 2018]; root of context hierarchy
+2018-11-01 11:26:54.245  INFO 1380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/greet]}" onto public org.springframework.web.servlet.ModelAndView com.fan.bootdemo.modules.demo.controller.DemoController.test(org.springframework.web.servlet.ModelAndView)
+2018-11-01 11:26:54.246  INFO 1380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/getdemo]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.getDemo()
+2018-11-01 11:26:54.247  INFO 1380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/hello]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.hello()
+2018-11-01 11:26:54.249  INFO 1380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-01 11:26:54.250  INFO 1380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-01 11:26:54.284  INFO 1380 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:26:54.285  INFO 1380 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:26:54.413  INFO 1380 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-01 11:26:54.740  INFO 1380 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-01 11:26:54.741  INFO 1380 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-11-01 11:26:54.741  INFO 1380 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-11-01 11:26:54.747  INFO 1380 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-11-01 11:26:54.748  INFO 1380 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-11-01 11:26:54.788  INFO 1380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path '/boot'
+2018-11-01 11:26:54.792  INFO 1380 --- [main] com.fan.bootdemo.BootdemoApplication     : Started BootdemoApplication in 5.707 seconds (JVM running for 7.425)
+2018-11-01 11:27:08.994  INFO 1380 --- [http-nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-01 11:27:08.994  INFO 1380 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-01 11:27:09.029  INFO 1380 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2018-11-01 11:27:09.053 DEBUG 1380 --- [http-nio-8090-exec-2] c.f.b.m.demo.controller.DemoController   : debug:
+2018-11-01 11:27:09.053  INFO 1380 --- [http-nio-8090-exec-2] c.f.b.m.demo.controller.DemoController   : info:
+2018-11-01 11:34:03.260  INFO 10948 --- [main] com.fan.bootdemo.BootdemoApplication     : Starting BootdemoApplication on XSW-Tech-NB13 with PID 10948 (D:\JAVA_PROJECT\bootdemo\target\classes started by Ershuai.Fan in D:\JAVA_PROJECT\bootdemo)
+2018-11-01 11:34:03.265 DEBUG 10948 --- [main] com.fan.bootdemo.BootdemoApplication     : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-11-01 11:34:03.268  INFO 10948 --- [main] com.fan.bootdemo.BootdemoApplication     : No active profile set, falling back to default profiles: default
+2018-11-01 11:34:03.411  INFO 10948 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48f2bd5b: startup date [Thu Nov 01 11:34:03 CST 2018]; root of context hierarchy
+2018-11-01 11:34:05.031  INFO 10948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2018-11-01 11:34:05.073  INFO 10948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-01 11:34:05.074  INFO 10948 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-11-01 11:34:05.079  INFO 10948 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\MySQL\MySQL Server 5.5\bin;C:\Users\ershuai.fan\AppData\Local\Microsoft\WindowsApps;;.]
+2018-11-01 11:34:05.320  INFO 10948 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-11-01 11:34:05.325  INFO 10948 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2018-11-01 11:34:05.325  INFO 10948 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1914 ms
+2018-11-01 11:34:05.408  INFO 10948 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-01 11:34:05.409  INFO 10948 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-11-01 11:34:05.412  INFO 10948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-01 11:34:05.412  INFO 10948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-01 11:34:05.412  INFO 10948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-01 11:34:05.413  INFO 10948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-01 11:34:05.413  INFO 10948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-01 11:34:05.641  INFO 10948 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-11-01 11:34:05.975  INFO 10948 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:34:06.142  INFO 10948 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48f2bd5b: startup date [Thu Nov 01 11:34:03 CST 2018]; root of context hierarchy
+2018-11-01 11:34:06.210  INFO 10948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/greet]}" onto public org.springframework.web.servlet.ModelAndView com.fan.bootdemo.modules.demo.controller.DemoController.test(org.springframework.web.servlet.ModelAndView)
+2018-11-01 11:34:06.212  INFO 10948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/hello]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.hello()
+2018-11-01 11:34:06.213  INFO 10948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/getdemo]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.getDemo()
+2018-11-01 11:34:06.219  INFO 10948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-01 11:34:06.221  INFO 10948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-01 11:34:06.258  INFO 10948 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:34:06.258  INFO 10948 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:34:06.372  INFO 10948 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-01 11:34:06.637  INFO 10948 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-01 11:34:06.638  INFO 10948 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-11-01 11:34:06.639  INFO 10948 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-11-01 11:34:06.644  INFO 10948 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-11-01 11:34:06.645  INFO 10948 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-11-01 11:34:06.681  INFO 10948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path '/boot'
+2018-11-01 11:34:06.684  INFO 10948 --- [main] com.fan.bootdemo.BootdemoApplication     : Started BootdemoApplication in 4.141 seconds (JVM running for 5.115)
+2018-11-01 11:34:13.706  INFO 10948 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-01 11:34:13.707  INFO 10948 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-01 11:34:13.722  INFO 10948 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2018-11-01 11:34:13.750 DEBUG 10948 --- [http-nio-8090-exec-1] c.f.b.m.demo.controller.DemoController   : debug:
+2018-11-01 11:34:13.750  INFO 10948 --- [http-nio-8090-exec-1] c.f.b.m.demo.controller.DemoController   : info:
+2018-11-01 11:40:49.508  INFO 4200 --- [main] com.fan.bootdemo.BootdemoApplication     : Starting BootdemoApplication on XSW-Tech-NB13 with PID 4200 (D:\JAVA_PROJECT\bootdemo\target\classes started by Ershuai.Fan in D:\JAVA_PROJECT\bootdemo)
+2018-11-01 11:40:49.513 DEBUG 4200 --- [main] com.fan.bootdemo.BootdemoApplication     : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-11-01 11:40:49.516  INFO 4200 --- [main] com.fan.bootdemo.BootdemoApplication     : No active profile set, falling back to default profiles: default
+2018-11-01 11:40:49.610  INFO 4200 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@76505305: startup date [Thu Nov 01 11:40:49 CST 2018]; root of context hierarchy
+2018-11-01 11:40:51.361  INFO 4200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2018-11-01 11:40:51.386  INFO 4200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-01 11:40:51.387  INFO 4200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-11-01 11:40:51.391  INFO 4200 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\MySQL\MySQL Server 5.5\bin;C:\Users\ershuai.fan\AppData\Local\Microsoft\WindowsApps;;.]
+2018-11-01 11:40:51.625  INFO 4200 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-11-01 11:40:51.630  INFO 4200 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2018-11-01 11:40:51.631  INFO 4200 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2021 ms
+2018-11-01 11:40:51.726  INFO 4200 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-01 11:40:51.727  INFO 4200 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-11-01 11:40:51.731  INFO 4200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-01 11:40:51.731  INFO 4200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-01 11:40:51.731  INFO 4200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-01 11:40:51.732  INFO 4200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-01 11:40:51.732  INFO 4200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-01 11:40:51.996  INFO 4200 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-11-01 11:40:52.297  INFO 4200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:40:52.502  INFO 4200 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@76505305: startup date [Thu Nov 01 11:40:49 CST 2018]; root of context hierarchy
+2018-11-01 11:40:52.557  INFO 4200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/greet]}" onto public org.springframework.web.servlet.ModelAndView com.fan.bootdemo.modules.demo.controller.DemoController.test(org.springframework.web.servlet.ModelAndView)
+2018-11-01 11:40:52.558  INFO 4200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/hello]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.hello()
+2018-11-01 11:40:52.558  INFO 4200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/getdemo]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.getDemo()
+2018-11-01 11:40:52.561  INFO 4200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-01 11:40:52.561  INFO 4200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-01 11:40:52.585  INFO 4200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:40:52.585  INFO 4200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 11:40:52.711  INFO 4200 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-01 11:40:52.972  INFO 4200 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-01 11:40:52.974  INFO 4200 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-11-01 11:40:52.975  INFO 4200 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-11-01 11:40:52.981  INFO 4200 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-11-01 11:40:52.983  INFO 4200 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-11-01 11:40:53.025  INFO 4200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path '/boot'
+2018-11-01 11:40:53.029  INFO 4200 --- [main] com.fan.bootdemo.BootdemoApplication     : Started BootdemoApplication in 4.215 seconds (JVM running for 5.146)
+2018-11-01 11:40:59.070  INFO 4200 --- [http-nio-127.0.0.1-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-01 11:40:59.070  INFO 4200 --- [http-nio-127.0.0.1-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-01 11:40:59.087  INFO 4200 --- [http-nio-127.0.0.1-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-11-01 11:40:59.121 DEBUG 4200 --- [http-nio-127.0.0.1-8090-exec-1] c.f.b.m.demo.controller.DemoController   : debug:
+2018-11-01 11:40:59.121  INFO 4200 --- [http-nio-127.0.0.1-8090-exec-1] c.f.b.m.demo.controller.DemoController   : info:
+2018-11-01 13:29:53.224  INFO 10564 --- [main] c.fan.bootdemo.BootdemoApplicationTests  : Starting BootdemoApplicationTests on XSW-Tech-NB13 with PID 10564 (started by Ershuai.Fan in D:\JAVA_PROJECT\bootdemo)
+2018-11-01 13:29:53.226 DEBUG 10564 --- [main] c.fan.bootdemo.BootdemoApplicationTests  : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-11-01 13:29:53.230  INFO 10564 --- [main] c.fan.bootdemo.BootdemoApplicationTests  : No active profile set, falling back to default profiles: default
+2018-11-01 13:29:53.323  INFO 10564 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1e4d3ce5: startup date [Thu Nov 01 13:29:53 CST 2018]; root of context hierarchy
+2018-11-01 13:29:55.701  INFO 10564 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-11-01 13:29:56.520  INFO 10564 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 13:29:56.895  INFO 10564 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1e4d3ce5: startup date [Thu Nov 01 13:29:53 CST 2018]; root of context hierarchy
+2018-11-01 13:29:57.011  INFO 10564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/greet]}" onto public org.springframework.web.servlet.ModelAndView com.fan.bootdemo.modules.demo.controller.DemoController.test(org.springframework.web.servlet.ModelAndView)
+2018-11-01 13:29:57.013  INFO 10564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/hello]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.hello()
+2018-11-01 13:29:57.014  INFO 10564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/getdemo]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.getDemo()
+2018-11-01 13:29:57.019  INFO 10564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-01 13:29:57.021  INFO 10564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-01 13:29:57.069  INFO 10564 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 13:29:57.069  INFO 10564 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 13:29:57.281  INFO 10564 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-01 13:29:57.722  INFO 10564 --- [main] c.fan.bootdemo.BootdemoApplicationTests  : Started BootdemoApplicationTests in 5.219 seconds (JVM running for 6.523)
+2018-11-01 13:29:58.046  INFO 10564 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1e4d3ce5: startup date [Thu Nov 01 13:29:53 CST 2018]; root of context hierarchy
+2018-11-01 13:29:58.066  INFO 10564 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-11-01 13:42:52.365  INFO 7420 --- [main] c.fan.bootdemo.BootdemoApplicationTests  : Starting BootdemoApplicationTests on XSW-Tech-NB13 with PID 7420 (started by Ershuai.Fan in D:\JAVA_PROJECT\bootdemo)
+2018-11-01 13:42:52.366 DEBUG 7420 --- [main] c.fan.bootdemo.BootdemoApplicationTests  : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-11-01 13:42:52.371  INFO 7420 --- [main] c.fan.bootdemo.BootdemoApplicationTests  : No active profile set, falling back to default profiles: default
+2018-11-01 13:42:52.476  INFO 7420 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1e4d3ce5: startup date [Thu Nov 01 13:42:52 CST 2018]; root of context hierarchy
+2018-11-01 13:42:54.917  INFO 7420 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-11-01 13:42:55.748  INFO 7420 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 13:42:56.133  INFO 7420 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1e4d3ce5: startup date [Thu Nov 01 13:42:52 CST 2018]; root of context hierarchy
+2018-11-01 13:42:56.267  INFO 7420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/greet]}" onto public org.springframework.web.servlet.ModelAndView com.fan.bootdemo.modules.demo.controller.DemoController.test(org.springframework.web.servlet.ModelAndView)
+2018-11-01 13:42:56.269  INFO 7420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/hello]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.hello()
+2018-11-01 13:42:56.270  INFO 7420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/getdemo]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.getDemo()
+2018-11-01 13:42:56.275  INFO 7420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-01 13:42:56.277  INFO 7420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-01 13:42:56.333  INFO 7420 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 13:42:56.334  INFO 7420 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 13:42:56.616  INFO 7420 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-01 13:42:57.086  INFO 7420 --- [main] c.fan.bootdemo.BootdemoApplicationTests  : Started BootdemoApplicationTests in 5.399 seconds (JVM running for 6.769)
+2018-11-01 13:42:57.398  INFO 7420 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1e4d3ce5: startup date [Thu Nov 01 13:42:52 CST 2018]; root of context hierarchy
+2018-11-01 13:42:57.405  INFO 7420 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-11-01 13:43:51.522  INFO 9156 --- [main] com.fan.bootdemo.BootdemoApplication     : Starting BootdemoApplication on XSW-Tech-NB13 with PID 9156 (D:\JAVA_PROJECT\bootdemo\target\classes started by Ershuai.Fan in D:\JAVA_PROJECT\bootdemo)
+2018-11-01 13:43:51.527 DEBUG 9156 --- [main] com.fan.bootdemo.BootdemoApplication     : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-11-01 13:43:51.529  INFO 9156 --- [main] com.fan.bootdemo.BootdemoApplication     : No active profile set, falling back to default profiles: default
+2018-11-01 13:43:51.615  INFO 9156 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@235834f2: startup date [Thu Nov 01 13:43:51 CST 2018]; root of context hierarchy
+2018-11-01 13:43:53.701  INFO 9156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2018-11-01 13:43:53.732  INFO 9156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-01 13:43:53.732  INFO 9156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-11-01 13:43:53.737  INFO 9156 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\MySQL\MySQL Server 5.5\bin;C:\Users\ershuai.fan\AppData\Local\Microsoft\WindowsApps;;.]
+2018-11-01 13:43:53.984  INFO 9156 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-11-01 13:43:53.991  INFO 9156 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2018-11-01 13:43:53.992  INFO 9156 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2377 ms
+2018-11-01 13:43:54.097  INFO 9156 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-01 13:43:54.099  INFO 9156 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-11-01 13:43:54.102  INFO 9156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-01 13:43:54.103  INFO 9156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-01 13:43:54.103  INFO 9156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-01 13:43:54.103  INFO 9156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-01 13:43:54.103  INFO 9156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-01 13:43:54.388  INFO 9156 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-11-01 13:43:54.686  INFO 9156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 13:43:54.865  INFO 9156 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@235834f2: startup date [Thu Nov 01 13:43:51 CST 2018]; root of context hierarchy
+2018-11-01 13:43:54.917  INFO 9156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/greet]}" onto public org.springframework.web.servlet.ModelAndView com.fan.bootdemo.modules.demo.controller.DemoController.test(org.springframework.web.servlet.ModelAndView)
+2018-11-01 13:43:54.918  INFO 9156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/getdemo]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.getDemo()
+2018-11-01 13:43:54.918  INFO 9156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/hello]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.hello()
+2018-11-01 13:43:54.920  INFO 9156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-01 13:43:54.921  INFO 9156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-01 13:43:54.946  INFO 9156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 13:43:54.946  INFO 9156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 13:43:55.048  INFO 9156 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-01 13:43:55.284  INFO 9156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-01 13:43:55.285  INFO 9156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-11-01 13:43:55.286  INFO 9156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-11-01 13:43:55.291  INFO 9156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-11-01 13:43:55.292  INFO 9156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-11-01 13:43:55.310 ERROR 9156 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8090]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8090]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:261) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at com.fan.bootdemo.BootdemoApplication.main(BootdemoApplication.java:27) [classes/:na]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_181]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_181]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_181]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_181]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_181]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1151) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	... 14 common frames omitted
+
+2018-11-01 13:43:55.319  INFO 9156 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-11-01 13:43:55.329  INFO 9156 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-01 13:43:55.333 ERROR 9156 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8090 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8090, or configure this application to listen on another port.
+
+2018-11-01 13:43:55.334  INFO 9156 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@235834f2: startup date [Thu Nov 01 13:43:51 CST 2018]; root of context hierarchy
+2018-11-01 13:43:55.337  INFO 9156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-11-01 13:43:55.337  INFO 9156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-11-01 13:43:55.339  INFO 9156 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-11-01 14:25:00.030  INFO 4368 --- [main] c.fan.bootdemo.BootdemoApplicationTests  : Starting BootdemoApplicationTests on XSW-Tech-NB13 with PID 4368 (started by Ershuai.Fan in D:\JAVA_PROJECT\bootdemo)
+2018-11-01 14:25:00.032 DEBUG 4368 --- [main] c.fan.bootdemo.BootdemoApplicationTests  : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-11-01 14:25:00.036  INFO 4368 --- [main] c.fan.bootdemo.BootdemoApplicationTests  : No active profile set, falling back to default profiles: default
+2018-11-01 14:25:00.128  INFO 4368 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4b5189ac: startup date [Thu Nov 01 14:25:00 CST 2018]; root of context hierarchy
+2018-11-01 14:25:02.345  INFO 4368 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-11-01 14:25:03.276  INFO 4368 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 14:25:03.610  INFO 4368 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4b5189ac: startup date [Thu Nov 01 14:25:00 CST 2018]; root of context hierarchy
+2018-11-01 14:25:03.763  INFO 4368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/greet]}" onto public org.springframework.web.servlet.ModelAndView com.fan.bootdemo.modules.demo.controller.DemoController.test(org.springframework.web.servlet.ModelAndView)
+2018-11-01 14:25:03.765  INFO 4368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/getdemo]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.getDemo()
+2018-11-01 14:25:03.767  INFO 4368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/hello]}" onto public java.lang.String com.fan.bootdemo.modules.demo.controller.DemoController.hello()
+2018-11-01 14:25:03.784  INFO 4368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-01 14:25:03.788  INFO 4368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-01 14:25:03.843  INFO 4368 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 14:25:03.844  INFO 4368 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 14:25:04.068  INFO 4368 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-01 14:25:04.483  INFO 4368 --- [main] c.fan.bootdemo.BootdemoApplicationTests  : Started BootdemoApplicationTests in 5.112 seconds (JVM running for 6.322)
+2018-11-01 14:25:04.766  INFO 4368 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4b5189ac: startup date [Thu Nov 01 14:25:00 CST 2018]; root of context hierarchy
+2018-11-01 14:25:04.774  INFO 4368 --- [Thread-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
