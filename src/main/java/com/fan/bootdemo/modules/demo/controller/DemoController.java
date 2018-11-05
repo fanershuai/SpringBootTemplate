@@ -4,8 +4,7 @@ import com.fan.bootdemo.modules.demo.service.DemoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 @RestController
@@ -47,15 +46,16 @@ public class DemoController {
         return "ok";
     }
 
-    @RequestMapping("/setkey")
-    public String setKey() {
-        demoService.setKey("key","afddafaf");
+    @RequestMapping(value = "/setkey", method = RequestMethod.GET)
+    public String setKey(@RequestParam(value = "key", required = false, defaultValue = "keydefault") String key, @RequestParam(value = "value", required = false, defaultValue = "valuedefault") String value) {
+        demoService.setKey(key, value);
         return "ok";
     }
 
-    @RequestMapping("/getvalue")
-    public String getvalue() {
-        return  demoService.getValue("key");
+    @RequestMapping(value = "/getvalue/{key}")
+    public String getvalue(@PathVariable("key") String key) {
+
+        return demoService.getValue(key);
     }
 
 }
