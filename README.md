@@ -1,2 +1,2 @@
 # springboot template
-A SpingBoot demo with mybatis ,thymeleaf and jsp
+A SpingBoot template demo  with mybatis ,thymeleaf and jsp
