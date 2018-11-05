@@ -10,4 +10,5 @@ import org.springframework.stereotype.Repository;
 public interface DemoMapper {
     //@Select("select * from user where id = 3")
      Demo getDemo();
+     void addUser();
 }

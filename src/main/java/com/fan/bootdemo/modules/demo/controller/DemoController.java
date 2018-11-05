@@ -27,7 +27,7 @@ public class DemoController {
     @RequestMapping("/greet")
     public ModelAndView test(ModelAndView mv) {
         mv.setViewName("/greet");
-         mv.addObject("title", "欢迎使用Thymeleaf!");
+        mv.addObject("title", "欢迎使用Thymeleaf!");
         return mv;
     }
 
@@ -38,6 +38,24 @@ public class DemoController {
         logger.trace("trace:");
         logger.info("info:");
         return demoService.getDemo().toString();
+    }
+
+
+    @RequestMapping("/adduser")
+    public String addUser() {
+        demoService.addUser();
+        return "ok";
+    }
+
+    @RequestMapping("/setkey")
+    public String setKey() {
+        demoService.setKey("key","afddafaf");
+        return "ok";
+    }
+
+    @RequestMapping("/getvalue")
+    public String getvalue() {
+        return  demoService.getValue("key");
     }
 
 }

@@ -4,5 +4,8 @@
     <select id="getDemo" resultType="com.fan.bootdemo.modules.demo.entity.Demo">
         select name as "name" from user WHERE id=2;
     </select>
+    <select id="addUser" >
+        call insertUserAutoMore;
+    </select>
 
 </mapper>
