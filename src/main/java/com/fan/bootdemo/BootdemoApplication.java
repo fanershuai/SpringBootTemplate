@@ -9,6 +9,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.context.WebApplicationContext;
 
@@ -19,7 +20,8 @@ import javax.sql.DataSource;
 
 @SpringBootApplication
 @EnableTransactionManagement   //开启事务管理
-@ComponentScan("com.fan.bootdemo.modules")
+@ComponentScan("com.fan.bootdemo")
+@EnableScheduling//定时任务开启
 //@MapperScan("com.fan.bootdemo.modules.demo.mapper")//与dao层的@Mapper二选一写上即可(主要作用是扫包)
 public class BootdemoApplication extends SpringBootServletInitializer {
 

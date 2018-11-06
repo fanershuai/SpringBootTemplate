@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class DemoController {
 
     //日志记录器
-    Logger logger = LoggerFactory.getLogger(getClass());
+   Logger logger = LoggerFactory.getLogger(getClass());
 
 
     @Autowired
