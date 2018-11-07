@@ -1,5 +1,6 @@
 package com.fan.bootdemo.modules.demo.controller;
 
+import com.fan.bootdemo.common.controller.BaseController;
 import com.fan.bootdemo.modules.demo.service.DemoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,10 +10,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 @RestController
 @RequestMapping("/demo")
-public class DemoController {
+public class DemoController  extends BaseController {
 
-    //日志记录器
-   Logger logger = LoggerFactory.getLogger(getClass());
+
 
 
     @Autowired
